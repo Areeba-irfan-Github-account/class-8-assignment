@@ -28,6 +28,7 @@ const authConfig = {
     pages: {
         signIn: '/login'
     },
+    providers: [],
     callbacks: {
         authorized ({ auth, request: { nextUrl } }) {
             const isLoggedIn = !!auth?.user;
@@ -40,8 +41,7 @@ const authConfig = {
             }
             return true;
         }
-    },
-    providers: []
+    }
 };
 }}),
 "[project]/middleware.ts [middleware] (ecmascript)": ((__turbopack_context__) => {
